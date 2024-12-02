@@ -1,0 +1,222 @@
+2024-11-26 18:04:28:8639 info: Database connected successfully! 
+2024-11-26 18:04:29:0551 debug: EventService:constructor 
+2024-11-26 18:04:29:0811 debug: TaskService:constructor 
+2024-11-26 18:31:00:8398 info: Database connected successfully! 
+2024-11-26 18:31:01:0120 debug: EventService:constructor 
+2024-11-26 18:31:01:0410 debug: TaskService:constructor 
+2024-11-26 18:35:18:5806 debug: Creating data of 'EventEntity' 
+2024-11-26 18:35:18:5846 error: No metadata for "EventEntity" was found. EntityMetadataNotFoundError: No metadata for "EventEntity" was found.
+    at DataSource.getMetadata (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:450:30)
+    at Repository.get metadata [as metadata] (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\repository\Repository.ts:53:40)
+    at Repository.create (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\repository\Repository.ts:130:18)
+    at DefaultCrudRepository.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\infrastructure\persistence\repositories\DefaultCrudRepository.ts:23:31)
+    at Generator.next (<anonymous>)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\infrastructure\persistence\repositories\DefaultCrudRepository.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\infrastructure\persistence\repositories\DefaultCrudRepository.ts:4:12)
+    at DefaultCrudRepository.create (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\infrastructure\persistence\repositories\DefaultCrudRepository.ts:24:16)
+    at EventRepository.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\infrastructure\persistence\repositories\eventsRepository.ts:20:49)
+2024-11-26 18:35:18:6306 http: [2024-11-26T23:35:18.630Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"name":"Tech Conference","description":"Annual technology conference focused on AI advancements.","startDate":"2024-12-10T09:00:00Z","endDate":"2024-12-10T17:00:00Z"} 45.701 ms
+ 
+2024-11-26 18:41:30:98110 info: Database connected successfully! 
+2024-11-26 18:41:31:1321 debug: EventService:constructor 
+2024-11-26 18:41:31:1381 debug: TaskService:constructor 
+2024-11-26 18:44:30:1772 info: Database connected successfully! 
+2024-11-26 18:44:30:4054 debug: EventService:constructor 
+2024-11-26 18:44:30:4364 debug: TaskService:constructor 
+2024-11-26 18:44:34:8779 debug: Creating data of 'EventEntity' 
+2024-11-26 18:44:35:4314 error: ER_BAD_FIELD_ERROR: Unknown column 'id' in 'field list' QueryFailedError: ER_BAD_FIELD_ERROR: Unknown column 'id' in 'field list'
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-26 18:44:35:4384 http: [2024-11-26T23:44:35.437Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"name":"Tech Conference","description":"Annual technology conference focused on AI advancements.","startDate":"2024-12-10T09:00:00Z","endDate":"2024-12-10T17:00:00Z"} 559.538 ms
+ 
+2024-11-26 18:46:21:4054 debug: Creating data of 'EventEntity' 
+2024-11-26 18:46:21:4404 error: ER_BAD_FIELD_ERROR: Unknown column 'name' in 'field list' QueryFailedError: ER_BAD_FIELD_ERROR: Unknown column 'name' in 'field list'
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-26 18:46:21:4565 http: [2024-11-26T23:46:21.456Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"name":"Tech Conference","description":"Annual technology conference focused on AI advancements.","startDate":"2024-12-10T09:00:00Z","endDate":"2024-12-10T17:00:00Z"} 47.621 ms
+ 
+2024-11-26 18:49:11:4815 debug: Creating data of 'EventEntity' 
+2024-11-26 18:49:11:5125 error: ER_BAD_FIELD_ERROR: Unknown column 'name' in 'field list' QueryFailedError: ER_BAD_FIELD_ERROR: Unknown column 'name' in 'field list'
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-26 18:49:11:5155 http: [2024-11-26T23:49:11.515Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"task_id":1,"event_name":"Tech Conference","event_location":"San Francisco","event_date":"2024-12-10T09:00:00Z","organizer":"Tech Solutions Inc.","max_attendees":300,"is_virtual":false} 33.216 ms
+ 
+2024-11-26 18:51:35:5005 debug: Creating data of 'EventEntity' 
+2024-11-26 18:51:35:5155 error: ER_BAD_FIELD_ERROR: Unknown column 'description' in 'field list' QueryFailedError: ER_BAD_FIELD_ERROR: Unknown column 'description' in 'field list'
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-26 18:51:35:5225 http: [2024-11-26T23:51:35.522Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"task_id":1,"event_name":"Tech Conference","event_location":"San Francisco","event_date":"2024-12-10T09:00:00Z","organizer":"Tech Solutions Inc.","max_attendees":300,"is_virtual":false} 21.521 ms
+ 
+2024-11-26 18:56:06:6797 debug: Creating data of 'EventEntity' 
+2024-11-26 18:56:06:7047 error: ER_BAD_FIELD_ERROR: Unknown column 'location' in 'field list' QueryFailedError: ER_BAD_FIELD_ERROR: Unknown column 'location' in 'field list'
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-26 18:56:06:7077 http: [2024-11-26T23:56:06.707Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"name":"Tech Meetup","description":"An open discussion about AI technologies.","location":"New York","startDate":"2024-12-01T10:00:00Z","endDate":"2024-12-01T17:00:00Z","isPublic":true} 27.533 ms
+ 
+2024-11-26 18:58:17:0751 debug: Creating data of 'EventEntity' 
+2024-11-26 18:58:17:0881 error: ER_BAD_FIELD_ERROR: Unknown column 'start_date' in 'field list' QueryFailedError: ER_BAD_FIELD_ERROR: Unknown column 'start_date' in 'field list'
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-26 18:58:17:0931 http: [2024-11-26T23:58:17.093Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"name":"Tech Meetup","description":"An open discussion about AI technologies.","location":"New York","startDate":"2024-12-01T10:00:00Z","endDate":"2024-12-01T17:00:00Z","isPublic":true} 16.200 ms
+ 
+2024-11-26 19:00:30:3053 debug: Creating data of 'EventEntity' 
+2024-11-26 19:00:30:3193 error: ER_BAD_FIELD_ERROR: Unknown column 'start_date' in 'field list' QueryFailedError: ER_BAD_FIELD_ERROR: Unknown column 'start_date' in 'field list'
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-26 19:00:30:3233 http: [2024-11-27T00:00:30.323Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"name":"Tech Meetup","description":"An open discussion about AI technologies.","location":"New York","startDate":"2024-12-01T10:00:00Z","endDate":"2024-12-01T17:00:00Z","isPublic":true} 16.894 ms
+ 
+2024-11-26 19:00:54:8208 debug: Creating data of 'EventEntity' 
+2024-11-26 19:00:54:8358 error: ER_BAD_FIELD_ERROR: Unknown column 'end_date' in 'field list' QueryFailedError: ER_BAD_FIELD_ERROR: Unknown column 'end_date' in 'field list'
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-26 19:00:54:8408 http: [2024-11-27T00:00:54.839Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"name":"Tech Meetup","description":"An open discussion about AI technologies.","location":"New York","startDate":"2024-12-01T10:00:00Z","endDate":"2024-12-01T17:00:00Z","isPublic":true} 17.263 ms
+ 
+2024-11-26 19:02:13:8659 debug: Creating data of 'EventEntity' 
+2024-11-26 19:02:13:8889 error: ER_BAD_FIELD_ERROR: Unknown column 'is_public' in 'field list' QueryFailedError: ER_BAD_FIELD_ERROR: Unknown column 'is_public' in 'field list'
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-26 19:02:13:8979 http: [2024-11-27T00:02:13.897Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"name":"Tech Meetup","description":"An open discussion about AI technologies.","location":"New York","startDate":"2024-12-01T10:00:00Z","endDate":"2024-12-01T17:00:00Z","isPublic":true} 31.399 ms
+ 
+2024-11-26 19:02:44:0531 debug: Creating data of 'EventEntity' 
+2024-11-26 19:02:44:0631 error: ER_BAD_FIELD_ERROR: Unknown column 'created_at' in 'field list' QueryFailedError: ER_BAD_FIELD_ERROR: Unknown column 'created_at' in 'field list'
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-26 19:02:44:0671 http: [2024-11-27T00:02:44.067Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"name":"Tech Meetup","description":"An open discussion about AI technologies.","location":"New York","startDate":"2024-12-01T10:00:00Z","endDate":"2024-12-01T17:00:00Z","isPublic":true} 13.075 ms
+ 
+2024-11-26 19:04:10:6256 debug: Creating data of 'EventEntity' 
+2024-11-26 19:04:10:6537 error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`cop16_api`.`events`, CONSTRAINT `fk_task_event` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) QueryFailedError: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`cop16_api`.`events`, CONSTRAINT `fk_task_event` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-26 19:04:10:6587 http: [2024-11-27T00:04:10.658Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"name":"Tech Meetup","description":"An open discussion about AI technologies.","location":"New York","startDate":"2024-12-01T10:00:00Z","endDate":"2024-12-01T17:00:00Z","isPublic":true} 33.361 ms
+ 
+2024-11-26 19:07:26:2322 debug: Creating data of 'EventEntity' 
+2024-11-26 19:07:26:2633 error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`cop16_api`.`events`, CONSTRAINT `fk_task_event` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`task_id`) ON DELETE CASCADE ON UPDATE CASCADE) QueryFailedError: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`cop16_api`.`events`, CONSTRAINT `fk_task_event` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`task_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-26 19:07:26:2693 http: [2024-11-27T00:07:26.269Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"name":"Tech Meetup","description":"An open discussion about AI technologies.","location":"New York","startDate":"2024-12-01T10:00:00Z","endDate":"2024-12-01T17:00:00Z","isPublic":true} 35.446 ms
+ 
+2024-11-26 19:09:23:5516 debug: Creating data of 'EventEntity' 
+2024-11-26 19:09:23:5696 error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`cop16_api`.`events`, CONSTRAINT `fk_task_event` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) QueryFailedError: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`cop16_api`.`events`, CONSTRAINT `fk_task_event` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-26 19:09:23:5716 http: [2024-11-27T00:09:23.571Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"name":"Tech Meetup","description":"An open discussion about AI technologies.","location":"New York","startDate":"2024-12-01T10:00:00Z","endDate":"2024-12-01T17:00:00Z","isPublic":true} 20.115 ms
+ 
+2024-11-26 19:17:59:0721 debug: Creating data of 'EventEntity' 
+2024-11-26 19:17:59:0851 error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`cop16_api`.`events`, CONSTRAINT `fk_task_event` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) QueryFailedError: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`cop16_api`.`events`, CONSTRAINT `fk_task_event` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-26 19:17:59:0871 http: [2024-11-27T00:17:59.087Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"name":"Tech Meetup","description":"An open discussion about AI technologies.","location":"New York","startDate":"2024-12-01T10:00:00Z","endDate":"2024-12-01T17:00:00Z","isPublic":true} 14.682 ms
+ 

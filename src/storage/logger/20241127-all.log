@@ -1,0 +1,192 @@
+2024-11-27 09:12:33:4444 info: Database connected successfully! 
+2024-11-27 09:12:33:6827 debug: EventService:constructor 
+2024-11-27 09:12:33:7257 debug: TaskService:constructor 
+2024-11-27 09:12:46:5536 debug: Creating data of 'EventEntity' 
+2024-11-27 09:12:46:6216 error: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`cop16_api`.`events`, CONSTRAINT `fk_task_event` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) QueryFailedError: ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`cop16_api`.`events`, CONSTRAINT `fk_task_event` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\driver\mysql\MysqlQueryRunner.ts:246:33)
+    at Query.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query.ErrorPacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\sequences\Query.js:92:8)
+    at Protocol._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\Lenovo\Downloads\arquitectura_limpia\node_modules\mysql\lib\Connection.js:88:28)
+2024-11-27 09:12:46:6276 http: [2024-11-27T14:12:46.627Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 500 32 "-" "insomnia/10.1.1" {"name":"Tech Meetup","description":"An open discussion about AI technologies.","location":"New York","startDate":"2024-12-01T10:00:00Z","endDate":"2024-12-01T17:00:00Z","isPublic":true} 71.306 ms
+ 
+2024-11-27 09:14:58:7067 info: Database connected successfully! 
+2024-11-27 09:14:58:8629 debug: EventService:constructor 
+2024-11-27 09:14:58:8709 debug: TaskService:constructor 
+2024-11-27 09:15:17:9499 info: Database connected successfully! 
+2024-11-27 09:15:18:0891 debug: EventService:constructor 
+2024-11-27 09:15:18:0941 debug: TaskService:constructor 
+2024-11-27 09:15:21:4735 error: Data type "jsonb" in "EventEntity.attendees" is not supported by "mysql" database. DataTypeNotSupportedError: Data type "jsonb" in "EventEntity.attendees" is not supported by "mysql" database.
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:136:31
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:128:18)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:43:18
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:42:25)
+    at DataSource.buildMetadatas (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:730:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DataSource.initialize (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:263:13)
+2024-11-27 09:15:44:0390 error: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database. DataTypeNotSupportedError: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database.
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:136:31
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:128:18)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:43:18
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:42:25)
+    at DataSource.buildMetadatas (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:730:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DataSource.initialize (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:263:13)
+2024-11-27 09:15:54:5485 error: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database. DataTypeNotSupportedError: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database.
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:136:31
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:128:18)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:43:18
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:42:25)
+    at DataSource.buildMetadatas (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:730:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DataSource.initialize (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:263:13)
+2024-11-27 09:16:15:9019 error: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database. DataTypeNotSupportedError: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database.
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:136:31
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:128:18)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:43:18
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:42:25)
+    at DataSource.buildMetadatas (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:730:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DataSource.initialize (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:263:13)
+2024-11-27 09:16:19:1051 error: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database. DataTypeNotSupportedError: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database.
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:136:31
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:128:18)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:43:18
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:42:25)
+    at DataSource.buildMetadatas (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:730:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DataSource.initialize (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:263:13)
+2024-11-27 09:16:23:1672 error: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database. DataTypeNotSupportedError: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database.
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:136:31
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:128:18)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:43:18
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:42:25)
+    at DataSource.buildMetadatas (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:730:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DataSource.initialize (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:263:13)
+2024-11-27 09:16:28:9489 error: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database. DataTypeNotSupportedError: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database.
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:136:31
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:128:18)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:43:18
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:42:25)
+    at DataSource.buildMetadatas (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:730:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DataSource.initialize (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:263:13)
+2024-11-27 09:17:58:2683 error: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database. DataTypeNotSupportedError: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database.
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:136:31
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:128:18)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:43:18
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:42:25)
+    at DataSource.buildMetadatas (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:730:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DataSource.initialize (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:263:13)
+2024-11-27 09:18:02:1672 error: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database. DataTypeNotSupportedError: Data type "Array" in "EventEntity.attendees" is not supported by "mysql" database.
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:136:31
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:128:18)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:43:18
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:42:25)
+    at DataSource.buildMetadatas (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:730:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DataSource.initialize (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:263:13)
+2024-11-27 09:18:09:3023 error: Data type "Array" in "EventEntity.taskI" is not supported by "mysql" database. DataTypeNotSupportedError: Data type "Array" in "EventEntity.taskI" is not supported by "mysql" database.
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:136:31
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:128:18)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:43:18
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:42:25)
+    at DataSource.buildMetadatas (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:730:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DataSource.initialize (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:263:13)
+2024-11-27 09:18:13:0300 error: Data type "Array" in "EventEntity.taskId" is not supported by "mysql" database. DataTypeNotSupportedError: Data type "Array" in "EventEntity.taskId" is not supported by "mysql" database.
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:136:31
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:128:18)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:43:18
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:42:25)
+    at DataSource.buildMetadatas (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:730:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DataSource.initialize (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:263:13)
+2024-11-27 09:19:26:3914 error: Data type "Array" in "EventEntity.taskId" is not supported by "mysql" database. DataTypeNotSupportedError: Data type "Array" in "EventEntity.taskId" is not supported by "mysql" database.
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:136:31
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:128:18)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:43:18
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:42:25)
+    at DataSource.buildMetadatas (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:730:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DataSource.initialize (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:263:13)
+2024-11-27 09:19:30:9049 error: Data type "Array" in "EventEntity.taskId" is not supported by "mysql" database. DataTypeNotSupportedError: Data type "Array" in "EventEntity.taskId" is not supported by "mysql" database.
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:136:31
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:128:18)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:43:18
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:42:25)
+    at DataSource.buildMetadatas (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:730:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DataSource.initialize (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:263:13)
+2024-11-27 09:20:12:5516 error: Data type "Array" in "EventEntity.taskId" is not supported by "mysql" database. DataTypeNotSupportedError: Data type "Array" in "EventEntity.taskId" is not supported by "mysql" database.
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:136:31
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:128:18)
+    at C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:43:18
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\metadata-builder\EntityMetadataValidator.ts:42:25)
+    at DataSource.buildMetadatas (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:730:33)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DataSource.initialize (C:\Users\Lenovo\Downloads\arquitectura_limpia\src\data-source\DataSource.ts:263:13)
+2024-11-27 09:20:38:6166 info: Database connected successfully! 
+2024-11-27 09:20:38:7728 debug: EventService:constructor 
+2024-11-27 09:20:38:7798 debug: TaskService:constructor 
+2024-11-27 09:21:13:0320 info: Database connected successfully! 
+2024-11-27 09:21:13:1792 debug: EventService:constructor 
+2024-11-27 09:21:13:1862 debug: TaskService:constructor 
+2024-11-27 09:21:23:0861 info: Database connected successfully! 
+2024-11-27 09:21:23:2242 debug: EventService:constructor 
+2024-11-27 09:21:23:2302 debug: TaskService:constructor 
+2024-11-27 09:21:26:1692 info: Database connected successfully! 
+2024-11-27 09:21:26:3684 debug: EventService:constructor 
+2024-11-27 09:21:26:3744 debug: TaskService:constructor 
+2024-11-27 09:23:01:4224 info: Database connected successfully! 
+2024-11-27 09:23:01:5586 debug: EventService:constructor 
+2024-11-27 09:23:01:5646 debug: TaskService:constructor 
+2024-11-27 09:23:09:4154 info: Database connected successfully! 
+2024-11-27 09:23:09:5826 debug: EventService:constructor 
+2024-11-27 09:23:09:5956 debug: TaskService:constructor 
+2024-11-27 09:23:29:9149 info: Database connected successfully! 
+2024-11-27 09:23:30:0871 debug: EventService:constructor 
+2024-11-27 09:23:30:0931 debug: TaskService:constructor 
+2024-11-27 09:24:28:7227 info: Database connected successfully! 
+2024-11-27 09:24:28:9039 debug: EventService:constructor 
+2024-11-27 09:24:28:9469 debug: TaskService:constructor 
+2024-11-27 09:24:35:7938 debug: Creating data of 'EventEntity' 
+2024-11-27 09:24:35:8258 http: [2024-11-27T14:24:35.825Z] ::ffff:127.0.0.1 "POST /api/v1/events HTTP/1.1" 201 299 "-" "insomnia/10.1.1" {"name":"Tech Meetup","description":"An open discussion about AI technologies.","location":"New York","startDate":"2024-12-01T10:00:00Z","endDate":"2024-12-01T17:00:00Z","isPublic":true,"taskId":1} 31.031 ms
+ 
+2024-11-27 09:26:43:6336 http: [2024-11-27T14:26:43.632Z] ::ffff:127.0.0.1 "DELETE /api/v1/events HTTP/1.1" 404 155 "-" "insomnia/10.1.1" {"id":1} 1.511 ms
+ 
